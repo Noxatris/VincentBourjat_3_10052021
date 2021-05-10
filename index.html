@@ -7,22 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/afe2908dec.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div><img src="image/logo.svg" alt="logo ohmyfood"></div>
+        <div class="conteneur_logo"><img class="conteneur_logo__img" id="logo" src="image/logo.svg" alt="logo ohmyfood">
+        </div>
     </header>
 
     <section>
-        <div>
+        <div class="conteneur_presentation">
             <nav>
-                <p><i class="fas fa-map-marker-alt"></i></p>
+                <p class="nav__conteneur_icone"><i class="fas fa-map-marker-alt"></i></p>
                 <p>Paris, Belleville</p>
             </nav>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exeception, séléctionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <div class="presentation">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exeception, séléctionnés par nos soins.</p>
+                <a class="bouton_exporation">Explorer nos restaurants</a>
+            </div>
         </div>
 
         <div>

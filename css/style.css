@@ -1,5 +1,89 @@
-* {
-  background-color: white;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    VARIABLE
+------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    HEADER
+------------------------------------------------------------------------------------------------------------------------*/
+header {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-bottom: 1px solid transparent;
+}
+header .conteneur_logo {
+  display: flex;
+  margin-top: 15px;
+  width: 50%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+header .conteneur_logo__image {
+  height: 65%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    NAV
+------------------------------------------------------------------------------------------------------------------------*/
+nav {
+  display: flex;
+  background-color: #cfcfcf;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+}
+nav .nav__conteneur_icone {
+  margin-right: 15px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    PRESENTATION
+------------------------------------------------------------------------------------------------------------------------*/
+.conteneur_presentation {
+  background-color: rgba(212, 212, 212, 0.315);
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+.presentation h1 {
+  width: 80%;
+  margin: 30px auto 0px auto;
+}
+.presentation p {
+  margin: 10px auto 0 auto;
+}
+.presentation .bouton_exporation {
+  width: 70%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 25px auto 15px auto;
+  font-weight: bold;
+  color: white;
+  background-image: radial-gradient(at 0% 5%, #FF79DA, 55%, #9356DC);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.presentation .bouton_exporation:hover {
+  cursor: pointer;
+}
+
+section img {
+  width: 50px;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
