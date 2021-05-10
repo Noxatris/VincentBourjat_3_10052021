@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 /*------------------------------------------------------------------------------------------------------------------------
                                                     VARIABLE
 ------------------------------------------------------------------------------------------------------------------------*/
@@ -81,6 +85,57 @@ nav .nav__conteneur_icone {
   cursor: pointer;
 }
 
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    FONCTIONNEMENT
+------------------------------------------------------------------------------------------------------------------------*/
+.conteneur_fonctionnement {
+  margin: 50px 0 60px 0;
+  height: auto;
+}
+.conteneur_fonctionnement h2 {
+  margin-left: 5%;
+  margin-bottom: 25px;
+}
+.conteneur_fonctionnement .etape_fonctionnement {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 70px;
+  margin: 10px auto 25px auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgba(212, 212, 212, 0.315);
+}
+.conteneur_fonctionnement .etape_fonctionnement:hover {
+  background-color: #e4d5f6;
+}
+.conteneur_fonctionnement .etape_fonctionnement:hover i {
+  color: #9356DC;
+}
+.conteneur_fonctionnement .etape_fonctionnement__number {
+  height: 22px;
+  width: 22px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 15px;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+  font-size: 0.8em;
+}
+.conteneur_fonctionnement .etape_fonctionnement p {
+  margin-right: 25px;
+  font-weight: bold;
+}
+.conteneur_fonctionnement .etape_fonctionnement p i {
+  color: gray;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    RESTAURANT
+------------------------------------------------------------------------------------------------------------------------*/
 section img {
   width: 50px;
   height: 50px;
