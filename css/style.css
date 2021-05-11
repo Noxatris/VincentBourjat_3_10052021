@@ -46,15 +46,19 @@ header .conteneur_logo__image {
 ------------------------------------------------------------------------------------------------------------------------*/
 nav {
   display: flex;
-  background-color: #cfcfcf;
+  flex-direction: column;
+  font-weight: bold;
+  overflow: hidden;
+}
+nav .nav_localisation {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
-  font-weight: bold;
 }
 nav .nav__conteneur_icone {
   margin-right: 15px;
 }
-
 /*------------------------------------------------------------------------------------------------------------------------
                                                     PRESENTATION
 ------------------------------------------------------------------------------------------------------------------------*/

@@ -48,17 +48,26 @@ header {
     }
 }
 
+
 /*------------------------------------------------------------------------------------------------------------------------
                                                     NAV
 ------------------------------------------------------------------------------------------------------------------------*/
 nav {
     display: flex;
-    background-color: rgb(207, 207, 207);
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
     font-weight: bold;
+    overflow: hidden;
+    .nav_localisation{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
     .nav__conteneur_icone{
         margin-right: 15px;
+    }
+    iframe {
+        
     }
 }
 
