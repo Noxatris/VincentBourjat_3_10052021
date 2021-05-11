@@ -84,7 +84,7 @@ nav .nav__conteneur_icone {
                                                     PRESENTATION
 ------------------------------------------------------------------------------------------------------------------------*/
 .conteneur_presentation {
-  background-color: rgba(212, 212, 212, 0.315);
+  background-color: #f2f2f2;
 }
 
 .presentation {
@@ -137,7 +137,7 @@ nav .nav__conteneur_icone {
   margin: 10px auto 25px auto;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: rgba(212, 212, 212, 0.315);
+  background-color: #f2f2f2;
 }
 .conteneur_fonctionnement .etape_fonctionnement:hover {
   background-color: #e4d5f6;

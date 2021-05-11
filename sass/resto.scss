@@ -8,6 +8,11 @@ a {
     color: black;
 }
 
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+}
+
 /*------------------------------------------------------------------------------------------------------------------------
                                                     VARIABLE
 ------------------------------------------------------------------------------------------------------------------------*/
@@ -15,14 +20,13 @@ $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-$gris: rgba(212, 212, 212, 0.315);
+$gris: #f2f2f2;
 
 /*------------------------------------------------------------------------------------------------------------------------
                                                     HEADER
 ------------------------------------------------------------------------------------------------------------------------*/
 header {
     display: flex;
-    justify-content: flex-start;
     height: 60px;
     box-shadow: $shadow;
     border-bottom: 1px solid transparent;
@@ -31,7 +35,7 @@ header {
         margin-top: 15px;
         width: 50%;
         height: 70%;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         &__image {
             height: 65%;
@@ -43,7 +47,7 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+    width: 25%;
     margin: 0;
     &__bouton {
         display: flex;
@@ -52,10 +56,133 @@ header {
         width: 50px;
         height: 50px;
         margin: auto 0;
+        font-size: 1.2em;
+        color:rgb(68, 68, 68);
     }
 }
 
-.image_restaurant img {
-    width: 50px;
-    height: 50px;
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    IMG RESTAURANT
+------------------------------------------------------------------------------------------------------------------------*/
+.image_restaurant{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        z-index: -1;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    IMG RESTAURANT
+------------------------------------------------------------------------------------------------------------------------*/
+.menu{
+    margin-top: -75px;
+    padding-bottom: 50px;
+    background-color: $gris;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    height: auto;
+    &__titre{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1em;
+        h1{
+            width: 80%;
+        }
+        p{
+            font-size: 1.5em;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__conteneur{
+        margin-bottom: 40px;
+        h2{
+            margin: 20px 0px 0px 5%;
+        }
+        &__bar{
+            margin: 5px 0px 20px 5%;
+            width: 50px;
+            height: 3px;
+            background-color: $tertiary-color;
+        }
+        &__plat{
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: $shadow;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            margin: 0 auto 10px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__texte{
+                h3{
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+            &__prix{
+                display: flex;
+                align-self: flex-end;
+                margin: 0 5px 0 0;
+            }
+            &__choix{
+                display: none;
+            }
+        }
+    }
+    .bouton_commander{
+        width: 60%;
+        height: 50px;
+        border-radius: 25px;
+        margin: 25px auto 0px auto;
+        font-weight: bold;
+        color: white;
+        background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $shadow;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    FOOTER
+------------------------------------------------------------------------------------------------------------------------*/
+footer{
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    div{
+        margin: 10px auto;
+        width: 90%;
+        height: 100%;
+        i{
+            margin-right: 10px;
+        }
+        h2{
+            font-weight: normal;
+            font-family: 'Shrikhand', cursive;
+            margin: 10px 0 10px 0;
+        }
+    }
 }

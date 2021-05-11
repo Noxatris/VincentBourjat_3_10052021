@@ -8,6 +8,11 @@ a {
   color: black;
 }
 
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+}
+
 /*------------------------------------------------------------------------------------------------------------------------
                                                     VARIABLE
 ------------------------------------------------------------------------------------------------------------------------*/
@@ -16,7 +21,6 @@ a {
 ------------------------------------------------------------------------------------------------------------------------*/
 header {
   display: flex;
-  justify-content: flex-start;
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-bottom: 1px solid transparent;
@@ -26,7 +30,7 @@ header .conteneur_logo {
   margin-top: 15px;
   width: 50%;
   height: 70%;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 header .conteneur_logo__image {
@@ -37,7 +41,7 @@ header .conteneur_logo__image {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 50%;
+  width: 25%;
   margin: 0;
 }
 .conteneur_retour__bouton {
@@ -47,11 +51,132 @@ header .conteneur_logo__image {
   width: 50px;
   height: 50px;
   margin: auto 0;
+  font-size: 1.2em;
+  color: #444444;
 }
 
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    IMG RESTAURANT
+------------------------------------------------------------------------------------------------------------------------*/
+.image_restaurant {
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .image_restaurant img {
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    IMG RESTAURANT
+------------------------------------------------------------------------------------------------------------------------*/
+.menu {
+  margin-top: -75px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  height: auto;
+}
+.menu__titre {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+}
+.menu__titre h1 {
+  width: 80%;
+}
+.menu__titre p {
+  font-size: 1.5em;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__conteneur {
+  margin-bottom: 40px;
+}
+.menu__conteneur h2 {
+  margin: 20px 0px 0px 5%;
+}
+.menu__conteneur__bar {
+  margin: 5px 0px 20px 5%;
   width: 50px;
+  height: 3px;
+  background-color: #99e2d0;
+}
+.menu__conteneur__plat {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  width: 90%;
   height: 50px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__conteneur__plat__texte h3 {
+  margin: 0;
+}
+.menu__conteneur__plat__texte p {
+  margin: 0;
+}
+.menu__conteneur__plat__prix {
+  display: flex;
+  align-self: flex-end;
+  margin: 0 5px 0 0;
+}
+.menu__conteneur__plat__choix {
+  display: none;
+}
+.menu .bouton_commander {
+  width: 60%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 25px auto 0px auto;
+  font-weight: bold;
+  color: white;
+  background-image: radial-gradient(at 0% 5%, #ff79da, 55%, #9356dc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.menu .bouton_commander:hover {
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    FOOTER
+------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  display: flex;
+  background-color: #2b2b2b;
+  color: white;
+}
+footer div {
+  margin: 10px auto;
+  width: 90%;
+  height: 100%;
+}
+footer div i {
+  margin-right: 10px;
+}
+footer div h2 {
+  font-weight: normal;
+  font-family: "Shrikhand", cursive;
+  margin: 10px 0 10px 0;
 }
 
 /*# sourceMappingURL=resto.css.map */
