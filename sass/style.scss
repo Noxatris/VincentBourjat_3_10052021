@@ -51,6 +51,7 @@ header {
                                                     NAV
 ------------------------------------------------------------------------------------------------------------------------*/
 nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -74,7 +75,7 @@ nav {
         .iframe_gmap {
             overflow: hidden;
             height: 0px;
-            transition: height 500ms ease;
+            transition: height 500ms ease-in-out;
             iframe {
                 min-height: 100%;
                 width: 100%;
@@ -104,6 +105,8 @@ nav {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: transform 300ms ease;
+                    
                 }
             }
         }
@@ -113,6 +116,9 @@ nav {
         #chk_gmap {
             &:checked ~ .iframe_gmap {
                 height: 300px;
+            }
+            &:checked + label p i{
+                transform: rotate(-180deg);
             }
         }
     }
@@ -134,7 +140,7 @@ nav {
     padding-bottom: 20px;
     h1 {
         width: 80%;
-        margin: 50px auto 0px auto;
+        margin: 70px auto 0px auto;
     }
     p {
         margin: 10px auto 0 auto;
@@ -306,8 +312,43 @@ footer {
 @media only screen and (min-width: 600px){
     .conteneur_main{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         background-color: $gris;
+    }
+
+    .conteneur_presentation{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 47%;
+
+        h1{
+            margin: 45px auto 0 auto;
+        }
+    }
+
+    .separateur_presentation{
+        width: .8%;
+        height: 210px;
+        margin-bottom: 35px;
+        background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+        border-radius: 20px;
+        display: flex;
+        align-self: center;
+    }
+
+    .conteneur_fonctionnement{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 47%;
+        margin: 0 2%;
+
+        h2{
+            margin: 15px auto 10px auto;
+        }
     }
 }
 
