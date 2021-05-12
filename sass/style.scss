@@ -1,17 +1,17 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-p{
-    font-family: 'Roboto', sans-serif;
+p {
+    font-family: "Roboto", sans-serif;
 }
 
-h2{
+h2 {
     margin-left: 5%;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -19,12 +19,11 @@ a{
 /*------------------------------------------------------------------------------------------------------------------------
                                                     VARIABLE
 ------------------------------------------------------------------------------------------------------------------------*/
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
 $shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 $gris: #f2f2f2;
-
 
 /*------------------------------------------------------------------------------------------------------------------------
                                                     HEADER
@@ -48,45 +47,73 @@ header {
     }
 }
 
-
 /*------------------------------------------------------------------------------------------------------------------------
                                                     NAV
 ------------------------------------------------------------------------------------------------------------------------*/
 nav {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     font-weight: bold;
-    overflow: hidden;
-    height: auto;
-    .nav_localisation{
+    .nav_localisation {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-content: center;
+        background-color: darken($gris, 15);
     }
-    .nav__conteneur_icone{
+    .nav__conteneur_icone {
         margin-right: 15px;
     }
-    iframe {
-    }
-}
 
-.bouton_gmap{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-top: 3px solid black;
-    p{
-        color: white;
-        background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
-        border-radius: 25px;
-        i{
-            padding: 10px;
-            width: 25px;
-            height: 25px;
+    .bouton_gmap {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        .iframe_gmap {
+            overflow: hidden;
+            height: 0px;
+            transition: height 500ms ease;
+            iframe {
+                min-height: 100%;
+                width: 100%;
+            }
+        }
+        .gmap_bar{
+            width: 100%;
+            height: 3px;
+            background-image: linear-gradient(rgb(128, 128, 128), 50%, darken(gray, 5));
+        }
+        label {
+            width: 60%;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            p {
+                margin: 0;
+                color: white;
+                background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                i {
+                    padding: 10px;
+                    width: 45px;
+                    height: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        input {
+            appearance: none;
+        }
+        #chk_gmap {
+            &:checked ~ .iframe_gmap {
+                height: 300px;
+            }
         }
     }
 }
@@ -94,24 +121,25 @@ nav {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     PRESENTATION
 ------------------------------------------------------------------------------------------------------------------------*/
-.conteneur_presentation{
+.conteneur_presentation {
     background-color: $gris;
 }
-.presentation{
+.presentation {
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 250px;
-    margin: 0 auto;
+    height: 280px;
+    margin: -45px auto 0 auto;
     text-align: center;
-    h1{
+    padding-bottom: 20px;
+    h1 {
         width: 80%;
-        margin: 30px auto 0px auto;
+        margin: 50px auto 0px auto;
     }
-    p{
+    p {
         margin: 10px auto 0 auto;
     }
-    .bouton_exporation{
+    .bouton_exporation {
         width: 70%;
         height: 50px;
         border-radius: 25px;
@@ -123,7 +151,7 @@ nav {
         align-items: center;
         justify-content: center;
         box-shadow: $shadow;
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
@@ -132,13 +160,13 @@ nav {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     FONCTIONNEMENT
 ------------------------------------------------------------------------------------------------------------------------*/
-.conteneur_fonctionnement{
+.conteneur_fonctionnement {
     margin: 50px 0 60px 0;
     height: auto;
-    h2{
+    h2 {
         margin-bottom: 25px;
     }
-    .etape_fonctionnement{
+    .etape_fonctionnement {
         display: flex;
         align-items: center;
         width: 90%;
@@ -147,13 +175,13 @@ nav {
         border-radius: 15px;
         box-shadow: $shadow;
         background-color: $gris;
-        &:hover{
+        &:hover {
             background-color: lighten($primary-color, 30);
-            i{
+            i {
                 color: $primary-color;
             }
         }
-        &__number{
+        &__number {
             height: 22px;
             width: 22px;
             background-color: $primary-color;
@@ -169,7 +197,7 @@ nav {
         p {
             margin-right: 25px;
             font-weight: bold;
-            i{
+            i {
                 color: gray;
             }
         }
@@ -179,12 +207,12 @@ nav {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     RESTAURANT
 ------------------------------------------------------------------------------------------------------------------------*/
-.conteneur_restaurant{
+.conteneur_restaurant {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
-    .restaurant{
+    .restaurant {
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -192,7 +220,7 @@ nav {
         margin: 0 auto 25px auto;
         box-shadow: $shadow;
         border-radius: 15px;
-        &__img{
+        &__img {
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             overflow: hidden;
@@ -201,29 +229,29 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            img{
+            img {
                 min-width: 100%;
                 height: auto;
             }
         }
-        &__description{
+        &__description {
             display: flex;
             width: 95%;
             margin: 0 auto;
             height: 30%;
             justify-content: space-between;
-            &__texte{
+            &__texte {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                h3{
+                h3 {
                     margin: 10px 0 5px 0;
                 }
-                p{
+                p {
                     margin: 5px 0 5px 0;
                 }
             }
-            &__favoris{
+            &__favoris {
                 display: flex;
                 margin-right: 5%;
                 font-size: 1.8em;
@@ -233,7 +261,7 @@ nav {
             }
         }
     }
-    .restaurant_nouveau{
+    .restaurant_nouveau {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -252,22 +280,54 @@ nav {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     FOOTER
 ------------------------------------------------------------------------------------------------------------------------*/
-footer{
+footer {
     display: flex;
     background-color: rgb(43, 43, 43);
     color: white;
-    div{
+    div {
         margin: 10px auto;
         width: 90%;
         height: 100%;
-        i{
+        i {
             margin-right: 10px;
         }
-        h2{
+        h2 {
             font-weight: normal;
-            font-family: 'Shrikhand', cursive;
+            font-family: "Shrikhand", cursive;
             margin: 10px 0 10px 0;
         }
     }
 }
 
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    TABLETTE PORTRAIT
+------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px){
+    .conteneur_main{
+        display: flex;
+        justify-content: space-between;
+        background-color: $gris;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    TABLETTE PAYSAGE
+------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 801px){
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    PC 
+------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1025px){
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    PC HD
+------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1280px){
+
+}
