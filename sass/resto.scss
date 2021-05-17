@@ -8,8 +8,8 @@ a {
     color: black;
 }
 
-h1{
-    font-family: 'Shrikhand', cursive;
+h1 {
+    font-family: "Shrikhand", cursive;
     font-weight: normal;
 }
 
@@ -57,14 +57,14 @@ header {
         height: 50px;
         margin: auto 0;
         font-size: 1.2em;
-        color:rgb(68, 68, 68);
+        color: rgb(68, 68, 68);
     }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
                                                     IMG RESTAURANT
 ------------------------------------------------------------------------------------------------------------------------*/
-.image_restaurant{
+.image_restaurant {
     margin: 0;
     width: 100%;
     height: 300px;
@@ -72,7 +72,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+    img {
         z-index: -1;
         min-width: 100%;
         min-height: 100%;
@@ -82,24 +82,24 @@ header {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     RESTAURANT
 ------------------------------------------------------------------------------------------------------------------------*/
-.menu{
+.menu {
     margin-top: -75px;
     padding-bottom: 50px;
     background-color: $gris;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
     height: auto;
-    &__titre{
+    &__titre {
         width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 1.1em;
-        h1{
+        h1 {
             width: 80%;
         }
-        p{
+        p {
             font-size: 1.5em;
             width: 20%;
             display: flex;
@@ -107,16 +107,16 @@ header {
             align-items: center;
         }
     }
-    #entrees{
+    #entrees {
         animation-delay: 0s;
     }
-    #plats{
+    #plats {
         animation-delay: 0.5s;
     }
-    #desserts{
+    #desserts {
         animation-delay: 1s;
     }
-    &__conteneur{
+    &__conteneur {
         margin-bottom: 40px;
         opacity: 0;
         animation-name: slideFromBottom;
@@ -124,16 +124,16 @@ header {
         animation-timing-function: ease-out;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
-        h2{
+        h2 {
             margin: 20px 0px 0px 5%;
         }
-        &__bar{
+        &__bar {
             margin: 5px 0px 20px 5%;
             width: 50px;
             height: 3px;
             background-color: $tertiary-color;
         }
-        &__plat{
+        &__plat {
             background-color: white;
             border-radius: 15px;
             box-shadow: $shadow;
@@ -144,25 +144,25 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            &__texte{
-                h3{
+            &__texte {
+                h3 {
                     margin: 0;
                 }
-                p{
+                p {
                     margin: 0;
                 }
             }
-            &__prix{
+            &__prix {
                 display: flex;
                 align-self: flex-end;
                 margin: 0 5px 0 0;
             }
-            &__choix{
+            &__choix {
                 display: none;
             }
         }
     }
-    .bouton_commander{
+    .bouton_commander {
         width: 60%;
         height: 50px;
         border-radius: 25px;
@@ -174,20 +174,20 @@ header {
         align-items: center;
         justify-content: center;
         box-shadow: $shadow;
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
 }
 
-// ------------------------- Animation ------------------------- 
+// ------------------------- Animation -------------------------
 @keyframes slideFromBottom {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(100%);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -196,20 +196,20 @@ header {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     FOOTER
 ------------------------------------------------------------------------------------------------------------------------*/
-footer{
+footer {
     display: flex;
     background-color: rgb(43, 43, 43);
     color: white;
-    div{
+    div {
         margin: 10px auto;
         width: 90%;
         height: 100%;
-        i{
+        i {
             margin-right: 10px;
         }
-        h2{
+        h2 {
             font-weight: normal;
-            font-family: 'Shrikhand', cursive;
+            font-family: "Shrikhand", cursive;
             margin: 10px 0 10px 0;
         }
     }
@@ -232,7 +232,7 @@ footer{
     /*------------------------------------------------------------------------------------------------------------------------
                                                     IMG RESTAURANT
     ------------------------------------------------------------------------------------------------------------------------*/
-    .image_restaurant{
+    .image_restaurant {
         margin: 0;
         width: 100%;
         height: 850px;
@@ -240,7 +240,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+        img {
             z-index: -1;
             min-width: 100%;
             min-height: 100%;
@@ -250,7 +250,7 @@ footer{
     /*------------------------------------------------------------------------------------------------------------------------
                                                         RESTAURANT
     ------------------------------------------------------------------------------------------------------------------------*/
-    .menu{
+    .menu {
         display: flex;
         flex-flow: row wrap;
 
@@ -262,7 +262,7 @@ footer{
         justify-content: space-around;
         background-color: transparent;
         border-radius: 35px;
-        &__titre{
+        &__titre {
             animation: 1s ease-out 0s 1 slideFromLeft;
             width: 100%;
             margin: 0 75% 0 -80px;
@@ -272,11 +272,11 @@ footer{
             font-size: 1.1em;
             background-color: rgba(242, 242, 242, 0.9);
             border-radius: 35px;
-            h1{
+            h1 {
                 width: 55%;
                 margin: 20px auto;
             }
-            p{
+            p {
                 font-size: 1.5em;
                 width: 15%;
                 display: flex;
@@ -285,33 +285,27 @@ footer{
                 margin: 0 20px;
             }
         }
-        #entrees{
+        #entrees {
             animation-delay: 1s;
         }
-        #plats{
+        #plats {
             animation-delay: 1.5s;
         }
-        #desserts{
+        #desserts {
             animation-delay: 2s;
         }
-        &__conteneur{
-            opacity: 0;
-            width: 30%;
+        &__conteneur {
+            width: 32%;
             background-color: rgba(242, 242, 242, 0.7);
             border-radius: 35px;
             margin-top: 50px;
-            animation-name: slideFromBottom;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            &__bar{
+            &__bar {
                 margin: 5px 0px 20px 5%;
                 width: 50px;
                 height: 3px;
                 background-color: $tertiary-color;
             }
-            &__plat{
+            &__plat {
                 background-color: white;
                 border-radius: 15px;
                 box-shadow: $shadow;
@@ -322,26 +316,25 @@ footer{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                &__texte{
-                    h3{
+                &__texte {
+                    h3 {
                         margin: 0;
                     }
-                    p{
+                    p {
                         margin: 0;
                     }
                 }
-                &__prix{
+                &__prix {
                     display: flex;
                     align-self: flex-end;
                     margin: 0 5px 0 0;
                 }
-                &__choix{
+                &__choix {
                     display: none;
                 }
             }
         }
-        .bouton_commander{
-
+        .bouton_commander {
             width: 20%;
             height: 50px;
             border-radius: 25px;
@@ -353,7 +346,7 @@ footer{
             align-items: center;
             justify-content: center;
             box-shadow: $shadow;
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
             //Animation
@@ -364,33 +357,20 @@ footer{
 
     /*-------- ANIMATION ----------*/
     @keyframes slideFromLeft {
-        0%{
+        0% {
             transform: translateX(-200%);
         }
-        100%{
+        100% {
             transform: translateX(0);
         }
     }
 
-    @keyframes slideFromBottom {
-        0%{
-            opacity: 0;
-            transform: translateY(100%);
-        }
-
-        100%{
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    
     @keyframes slideButton {
-        0%{
+        0% {
             opacity: 0;
             transform: translateY(500%);
         }
-        100%{
+        100% {
             opacity: 1;
             transform: translateY(0);
         }
@@ -399,24 +379,24 @@ footer{
     /*------------------------------------------------------------------------------------------------------------------------
                                                     FOOTER
     ------------------------------------------------------------------------------------------------------------------------*/
-    footer{
+    footer {
         display: flex;
         background-color: rgb(43, 43, 43);
         color: white;
         padding-bottom: 35px;
-        div{
+        div {
             display: flex;
             flex-flow: row wrap;
             margin: 10px auto;
             width: 90%;
             height: 100%;
-            p{
+            p {
                 margin-right: 50px;
             }
-            i{
+            i {
                 margin-right: 5px;
             }
-            h2{
+            h2 {
                 width: 90%;
                 margin: 10px 0 10px 0;
             }

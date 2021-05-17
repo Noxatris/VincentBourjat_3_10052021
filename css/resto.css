@@ -284,16 +284,10 @@ footer div h2 {
     animation-delay: 2s;
   }
   .menu__conteneur {
-    opacity: 0;
-    width: 30%;
+    width: 32%;
     background-color: rgba(242, 242, 242, 0.7);
     border-radius: 35px;
     margin-top: 50px;
-    animation-name: slideFromBottom;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
   .menu__conteneur__bar {
     margin: 5px 0px 20px 5%;
@@ -353,16 +347,6 @@ footer div h2 {
     }
     100% {
       transform: translateX(0);
-    }
-  }
-  @keyframes slideFromBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
     }
   }
   @keyframes slideButton {
