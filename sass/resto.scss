@@ -107,8 +107,23 @@ header {
             align-items: center;
         }
     }
+    #entrees{
+        animation-delay: 0s;
+    }
+    #plats{
+        animation-delay: 0.5s;
+    }
+    #desserts{
+        animation-delay: 1s;
+    }
     &__conteneur{
         margin-bottom: 40px;
+        opacity: 0;
+        animation-name: slideFromBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
         h2{
             margin: 20px 0px 0px 5%;
         }
@@ -162,6 +177,19 @@ header {
         &:hover{
             cursor: pointer;
         }
+    }
+}
+
+// ------------------------- Animation ------------------------- 
+@keyframes slideFromBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

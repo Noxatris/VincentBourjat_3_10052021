@@ -102,8 +102,23 @@ header .conteneur_logo__image {
   justify-content: center;
   align-items: center;
 }
+.menu #entrees {
+  animation-delay: 0s;
+}
+.menu #plats {
+  animation-delay: 0.5s;
+}
+.menu #desserts {
+  animation-delay: 1s;
+}
 .menu__conteneur {
   margin-bottom: 40px;
+  opacity: 0;
+  animation-name: slideFromBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .menu__conteneur h2 {
   margin: 20px 0px 0px 5%;
@@ -157,6 +172,16 @@ header .conteneur_logo__image {
   cursor: pointer;
 }
 
+@keyframes slideFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*------------------------------------------------------------------------------------------------------------------------
                                                     FOOTER
 ------------------------------------------------------------------------------------------------------------------------*/
