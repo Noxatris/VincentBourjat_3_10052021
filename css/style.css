@@ -321,6 +321,10 @@ footer div h2 {
   font-family: "Shrikhand", cursive;
   margin: 10px 0 10px 0;
 }
+footer div a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
 
 /*==============================================================================================================================================================================================
                                                     TABLETTE PORTRAIT
