@@ -263,6 +263,32 @@ nav {
                 color: gray;
                 justify-content: center;
                 align-items: center;
+                .fas{
+                    background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    opacity: 0;
+                    margin-left: -28px;
+                    cursor: pointer;
+                } 
+                input{
+                    appearance: none;
+                    &:checked + label .fas{
+                        z-index: 1;
+                        opacity: 1;
+                    }
+                    &:checked + label .far{
+                        z-index: -1;
+                        opacity: 0;
+                    }
+                }
+                .fas{
+                    transition: all 1s ease;
+                }
+                .far{
+                    transition: all 1s ease;
+                }
             }
         }
     }
@@ -365,7 +391,7 @@ footer {
 /*==============================================================================================================================================================================================
                                                     TABLETTE PAYSAGE
 ===============================================================================================================================================================================================*/
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 801px) and (max-width: 1024px){
     body {
         display: flex;
         flex-flow: row wrap;
@@ -469,6 +495,21 @@ footer {
                                                     PC 
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 1025px) {
+    .conteneur_restaurant{
+        flex-direction: row;
+        justify-content: space-around;
+        .restaurant{
+            width: 22%;
+            height: 350px;
+            &__img{
+                height: 85%;
+                img{
+                    min-height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 /*==============================================================================================================================================================================================

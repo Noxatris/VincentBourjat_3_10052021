@@ -259,6 +259,32 @@ nav .bouton_gmap #chk_gmap:checked + label p i {
   justify-content: center;
   align-items: center;
 }
+.conteneur_restaurant .restaurant__description__favoris .fas {
+  background-image: radial-gradient(at 0% 5%, #ff79da, 55%, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  margin-left: -28px;
+  cursor: pointer;
+}
+.conteneur_restaurant .restaurant__description__favoris input {
+  appearance: none;
+}
+.conteneur_restaurant .restaurant__description__favoris input:checked + label .fas {
+  z-index: 1;
+  opacity: 1;
+}
+.conteneur_restaurant .restaurant__description__favoris input:checked + label .far {
+  z-index: -1;
+  opacity: 0;
+}
+.conteneur_restaurant .restaurant__description__favoris .fas {
+  transition: all 1s ease;
+}
+.conteneur_restaurant .restaurant__description__favoris .far {
+  transition: all 1s ease;
+}
 .conteneur_restaurant .restaurant_nouveau {
   display: flex;
   justify-content: center;
@@ -354,7 +380,7 @@ footer div h2 {
 /*==============================================================================================================================================================================================
                                                     TABLETTE PAYSAGE
 ===============================================================================================================================================================================================*/
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
   body {
     display: flex;
     flex-flow: row wrap;
@@ -457,6 +483,23 @@ footer div h2 {
 /*==============================================================================================================================================================================================
                                                     PC 
 ===============================================================================================================================================================================================*/
+@media only screen and (min-width: 1025px) {
+  .conteneur_restaurant {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .conteneur_restaurant .restaurant {
+    width: 22%;
+    height: 350px;
+  }
+  .conteneur_restaurant .restaurant__img {
+    height: 85%;
+  }
+  .conteneur_restaurant .restaurant__img img {
+    min-height: 100%;
+    width: 100%;
+  }
+}
 /*==============================================================================================================================================================================================
                                                     PC HD
 ===============================================================================================================================================================================================*/
