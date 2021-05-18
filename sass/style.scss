@@ -162,7 +162,7 @@ nav {
         &:hover {
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
-            background-image: radial-gradient(at 0% 5%, lighten($secondary-color, 3), 55%, lighten($primary-color, 3));
+            background-image: radial-gradient(at 0% 5%, lighten($secondary-color, 4), 55%, lighten($primary-color, 4));
         }
     }
 }

@@ -155,7 +155,7 @@ nav .bouton_gmap #chk_gmap:checked + label i {
 .presentation .bouton_exporation:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
-  background-image: radial-gradient(at 0% 5%, #ff88de, 55%, #9b63df);
+  background-image: radial-gradient(at 0% 5%, #ff8de0, 55%, #9e67e0);
 }
 
 /*------------------------------------------------------------------------------------------------------------------------
