@@ -87,26 +87,24 @@ nav {
             background-image: linear-gradient(rgb(128, 128, 128), 50%, darken(gray, 5));
         }
         label {
-            width: 60%;
+            width: 75px;
+            height: 40px;
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            p {
-                margin: 0;
-                color: white;
-                background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
-                border-bottom-left-radius: 25px;
-                border-bottom-right-radius: 25px;
-                i {
-                    padding: 10px;
-                    width: 45px;
-                    height: 15px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    transition: transform 300ms ease;
-                }
+            align-items: center;
+            background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            color: white;
+            i {
+                padding: 10px;
+                width: 45px;
+                height: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform .5s ease;
             }
         }
         input {
@@ -116,7 +114,7 @@ nav {
             &:checked ~ .iframe_gmap {
                 height: 300px;
             }
-            &:checked + label p i {
+            &:checked + label i {
                 transform: rotate(-180deg);
             }
         }
@@ -263,30 +261,30 @@ nav {
                 color: gray;
                 justify-content: center;
                 align-items: center;
-                .fas{
+                .fas {
                     background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
-                    background-clip:text;
+                    background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
                     opacity: 0;
                     margin-left: -28px;
                     cursor: pointer;
-                } 
-                input{
+                }
+                input {
                     appearance: none;
-                    &:checked + label .fas{
+                    &:checked + label .fas {
                         z-index: 1;
                         opacity: 1;
                     }
-                    &:checked + label .far{
+                    &:checked + label .far {
                         z-index: -1;
                         opacity: 0;
                     }
                 }
-                .fas{
+                .fas {
                     transition: all 1s ease;
                 }
-                .far{
+                .far {
                     transition: all 1s ease;
                 }
             }
@@ -328,7 +326,7 @@ footer {
             margin: 10px 0 10px 0;
         }
 
-        a{
+        a {
             color: white;
             font-family: "Roboto", sans-serif;
         }
@@ -396,7 +394,7 @@ footer {
 /*==============================================================================================================================================================================================
                                                     TABLETTE PAYSAGE
 ===============================================================================================================================================================================================*/
-@media only screen and (min-width: 801px) and (max-width: 1024px){
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
     body {
         display: flex;
         flex-flow: row wrap;
@@ -472,19 +470,19 @@ footer {
     /*------------------------------------------------------------------------------------------------------------------------
                                                     RESTAURANT
     ------------------------------------------------------------------------------------------------------------------------*/
-    .section_restaurant{
+    .section_restaurant {
         height: 700px;
         margin-bottom: 20px;
-        h2{
+        h2 {
             margin-top: 0px;
         }
     }
-    .conteneur_restaurant {  
+    .conteneur_restaurant {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 85%;   
+        height: 85%;
         overflow: scroll;
     }
     /*------------------------------------------------------------------------------------------------------------------------
@@ -500,15 +498,15 @@ footer {
                                                     PC 
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 1025px) {
-    .conteneur_restaurant{
+    .conteneur_restaurant {
         flex-direction: row;
         justify-content: space-around;
-        .restaurant{
+        .restaurant {
             width: 22%;
             height: 350px;
-            &__img{
+            &__img {
                 height: 85%;
-                img{
+                img {
                     min-height: 100%;
                     width: 100%;
                 }
