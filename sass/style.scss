@@ -223,6 +223,7 @@ nav {
         margin: 0 auto 25px auto;
         box-shadow: $shadow;
         border-radius: 15px;
+        position: relative;
         &__img {
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;

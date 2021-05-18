@@ -216,6 +216,7 @@ nav .bouton_gmap #chk_gmap:checked + label i {
   margin: 0 auto 25px auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
+  position: relative;
 }
 .conteneur_restaurant .restaurant__img {
   border-top-left-radius: 15px;
