@@ -8,7 +8,8 @@ a {
     color: black;
 }
 
-p, a{
+p,
+a {
     font-family: "Roboto", sans-serif;
 }
 
@@ -141,28 +142,80 @@ header {
             background-color: white;
             border-radius: 15px;
             box-shadow: $shadow;
-            padding: 10px;
             width: 90%;
-            height: 50px;
-            margin: 0 auto 10px auto;
+            height: 70px;
+            margin: 0 auto 30px auto;
             display: flex;
-            justify-content: space-between;
+            overflow: hidden;
             align-items: center;
+            flex-flow: row nowrap;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
             &__texte {
-                h3 {
-                    margin: 0 0 5px 0;
-                }
-                p {
-                    margin: 0;
-                }
-            }
-            &__prix {
+                width: 100%;
+                height: 100%;
+                padding: 10px 0px 10px 10px;
                 display: flex;
-                align-self: flex-end;
-                margin: 0 5px 0 0;
+                flex-flow: column nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: all 1s;
+                transition-delay: 0.3s;
+                h3,
+                p {
+                    margin: auto 0;
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: auto;
+                }
             }
             &__choix {
-                display: none;
+                display: flex;
+                width: 45%;
+                height: 100%;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                transform-origin: left;
+                transform: translateX(65%);
+                transition: all 1s;
+                margin-left: 10px;
+                &__selec {
+                    height: 100%;
+                    background-color: $tertiary-color;
+                    width: 65%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 1.5em;
+                    i{
+                        transition: all 1s;
+                        transition-delay: 0.1s;
+                        transform: rotate(-45deg);
+                    }
+                }
+                &__prix {
+                    width: 40%;
+                    display: flex;
+                    align-self: flex-end;
+                    justify-self: center;
+                    margin-bottom: 5px;
+                    margin-right: 10px;
+                }
+            }
+            //Animation
+            &:hover {
+                .menu__conteneur__plat__choix {
+                    transform: translateX(0);
+                }
+                .menu__conteneur__plat__choix__selec i{
+                    transform: rotate(360deg);
+                }
+                .menu__conteneur__plat__choix__texte {
+                    width: 80%;
+                }
             }
         }
     }
@@ -216,7 +269,7 @@ footer {
             font-family: "Shrikhand", cursive;
             margin: 10px 0 10px 0;
         }
-        a{
+        a {
             color: white;
             font-family: "Roboto", sans-serif;
         }
@@ -406,7 +459,7 @@ footer {
                 width: 90%;
                 margin: 10px 0 10px 0;
             }
-            a{
+            a {
                 color: white;
                 margin: 16px;
                 font-size: 1em;
@@ -418,7 +471,6 @@ footer {
                                                     PC
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 1225px) {
-
     /*------------------------------------------------------------------------------------------------------------------------
                                                         RESTAURANT
     ------------------------------------------------------------------------------------------------------------------------*/
@@ -428,7 +480,7 @@ footer {
         }
     }
 
-    footer{
+    footer {
         padding-bottom: 2%;
     }
 }
