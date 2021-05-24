@@ -20,6 +20,9 @@ a {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     VARIABLE
 ------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------
+                                                    LOADER
+------------------------------------------------------------------------------------------------------------------------*/
 .conteneur_globale {
   opacity: 0;
   animation: 1s ease-in-out 2.5s 1 forwards opacityBody;
@@ -72,7 +75,7 @@ a {
 }
 .conteneur_loader__texte {
   display: flex;
-  font-size: 2em;
+  font-size: 3em;
 }
 .conteneur_loader__texte p {
   animation: 1s ease-in-out infinite alternate-reverse translateLetter;
@@ -92,8 +95,8 @@ a {
   animation-delay: 0.1s;
 }
 .conteneur_loader__bar {
-  width: 200px;
-  height: 20px;
+  width: 280px;
+  height: 30px;
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid black;
