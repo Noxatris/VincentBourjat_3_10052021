@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: gray;
 }
 
 p {
@@ -19,6 +20,122 @@ a {
 /*------------------------------------------------------------------------------------------------------------------------
                                                     VARIABLE
 ------------------------------------------------------------------------------------------------------------------------*/
+.conteneur_globale {
+  opacity: 0;
+  animation: 1s ease-in-out 2.5s 1 forwards opacityBody;
+  background-color: white;
+}
+
+@keyframes opacityBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes translateLetter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+.lettre--1 {
+  animation-delay: 0.1s;
+}
+
+.lettre--3 {
+  animation-delay: 0.1s;
+}
+
+.lettre--5 {
+  animation-delay: 0.1s;
+}
+
+.lettre--7 {
+  animation-delay: 0.1s;
+}
+
+.conteneur_loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  top: 35%;
+  border-radius: 50%;
+  animation: 1s ease-in-out 2s 1 forwards opacityLoader;
+}
+.conteneur_loader__texte {
+  display: flex;
+  font-size: 2em;
+}
+.conteneur_loader__texte p {
+  animation: 1s ease-in-out infinite alternate-reverse translateLetter;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+.conteneur_loader__texte .lettre--1 {
+  animation-delay: 0.1s;
+}
+.conteneur_loader__texte .lettre--3 {
+  animation-delay: 0.1s;
+}
+.conteneur_loader__texte .lettre--5 {
+  animation-delay: 0.1s;
+}
+.conteneur_loader__texte .lettre--7 {
+  animation-delay: 0.1s;
+}
+.conteneur_loader__bar {
+  width: 200px;
+  height: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 10px;
+}
+.conteneur_loader__bar__progression {
+  background-image: radial-gradient(at 0% 5%, #ff79da, 55%, #9356dc);
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  animation: 2s ease-in-out 0s 1 forwards loaderBar;
+  transform-origin: left center;
+}
+
+@keyframes loaderBar {
+  0% {
+    transform: scaleX(0);
+  }
+  20% {
+    transform: scaleX(0.32);
+  }
+  48% {
+    transform: scaleX(0.61);
+  }
+  72% {
+    transform: scaleX(0.87);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes opacityLoader {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+}
 /*------------------------------------------------------------------------------------------------------------------------
                                                     HEADER
 ------------------------------------------------------------------------------------------------------------------------*/
@@ -412,7 +529,7 @@ footer div a {
                                                     TABLETTE PAYSAGE
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
-  body {
+  .conteneur_globale {
     display: flex;
     flex-flow: row wrap;
   }

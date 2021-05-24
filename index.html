@@ -13,150 +13,171 @@
 </head>
 
 <body>
-    <header>
-        <div class="conteneur_logo"><img class="conteneur_logo__img" id="logo" src="image/logo.svg" alt="logo ohmyfood">
+
+    <div class="conteneur_loader">
+        <div class="conteneur_loader__texte">
+            <p class="lettre--1">o</p>
+            <p class="lettre--2">h</p>
+            <p class="lettre--3">m</p>
+            <p class="lettre--4">y</p>
+            <p class="lettre--5">f</p>
+            <p class="lettre--6">o</p>
+            <p class="lettre--7">o</p>
+            <p class="lettre--8">d</p>
+
         </div>
-    </header>
- 
-    <nav>
-        <div class="nav_localisation">
-            <p class="nav__conteneur_icone"><i class="fas fa-map-marker-alt"></i></p>
-            <p>Paris, Belleville</p>
+        <div class="conteneur_loader__bar">
+            <div class="conteneur_loader__bar__progression"></div>
         </div>
-        <div class="animation_gmap">
-            <div class="bouton_gmap">
-                <input type="checkbox" id="chk_gmap" name="chk_gmap">
-                <label for="chk_gmap">
-                    <i class="fas fa-arrow-down"></i>
-                </label>
-                <div class="gmap_bar"></div>
-                <div class="iframe_gmap">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.639156781732!2d2.3823044293264632!3d48.87118401715512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66deb8dcf4d1d%3A0x6193d771823c73f6!2sQuartier%20de%20Belleville%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1620726657798!5m2!1sfr!2sfr"
-                        height="250" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
+    </div>
+
+    <div class="conteneur_globale">
+        <header>
+            <div class="conteneur_logo"><img class="conteneur_logo__img" id="logo" src="image/logo.svg"
+                    alt="logo ohmyfood">
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav_localisation">
+                <p class="nav__conteneur_icone"><i class="fas fa-map-marker-alt"></i></p>
+                <p>Paris, Belleville</p>
+            </div>
+            <div class="animation_gmap">
+                <div class="bouton_gmap">
+                    <input type="checkbox" id="chk_gmap" name="chk_gmap">
+                    <label for="chk_gmap">
+                        <i class="fas fa-arrow-down"></i>
+                    </label>
+                    <div class="gmap_bar"></div>
+                    <div class="iframe_gmap">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.639156781732!2d2.3823044293264632!3d48.87118401715512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66deb8dcf4d1d%3A0x6193d771823c73f6!2sQuartier%20de%20Belleville%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1620726657798!5m2!1sfr!2sfr"
+                            height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
                 </div>
-                
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <section class="conteneur_main">
+        <section class="conteneur_main">
 
 
-        <div class="conteneur_presentation">
-            <div class="presentation">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exeception, séléctionnés par nos soins.</p>
-                <a class="bouton_exporation" href="#">Explorer nos restaurants</a>
+            <div class="conteneur_presentation">
+                <div class="presentation">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exeception, séléctionnés par nos soins.</p>
+                    <a class="bouton_exporation" href="#">Explorer nos restaurants</a>
+                </div>
             </div>
-        </div>
-        <div class="separateur_presentation"></div>
+            <div class="separateur_presentation"></div>
 
-        <div class="conteneur_fonctionnement">
-            <h2>Fonctionnement</h2>
-            <div class="etape_fonctionnement">
-                <p class="etape_fonctionnement__number">1</p>
-                <p><i class="fas fa-mobile-alt"></i></p>
-                <p>Choisissez un restaurant</p>
+            <div class="conteneur_fonctionnement">
+                <h2>Fonctionnement</h2>
+                <div class="etape_fonctionnement">
+                    <p class="etape_fonctionnement__number">1</p>
+                    <p><i class="fas fa-mobile-alt"></i></p>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="etape_fonctionnement">
+                    <p class="etape_fonctionnement__number">2</p>
+                    <p><i class="fas fa-list-ul"></i></p>
+                    <p>Composez votre menu</p>
+                </div>
+                <div class="etape_fonctionnement">
+                    <p class="etape_fonctionnement__number">3</p>
+                    <p><i class="fas fa-store"></i></p>
+                    <p>Dégustez au restaurant</p>
+                </div>
             </div>
-            <div class="etape_fonctionnement">
-                <p class="etape_fonctionnement__number">2</p>
-                <p><i class="fas fa-list-ul"></i></p>
-                <p>Composez votre menu</p>
-            </div>
-            <div class="etape_fonctionnement">
-                <p class="etape_fonctionnement__number">3</p>
-                <p><i class="fas fa-store"></i></p>
-                <p>Dégustez au restaurant</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section_restaurant">
-        <h2>Restaurants</h2>
-        <div class="conteneur_restaurant">
-            <div class="restaurant">
-                <a href="restaurant/restaurant_1.html" class="restaurant__img">
-                    <img src="image/restaurant_1.jpg" alt="Image La palette du goût">
-                </a>
-                <div class="restaurant__description">
-                    <a href="restaurant/restaurant_1.html" class="restaurant__description__texte">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+        <section class="section_restaurant">
+            <h2>Restaurants</h2>
+            <div class="conteneur_restaurant">
+                <div class="restaurant">
+                    <a href="restaurant/restaurant_1.html" class="restaurant__img">
+                        <img src="image/restaurant_1.jpg" alt="Image La palette du goût">
                     </a>
-                    <div class="restaurant__description__favoris">
-                        <input type="checkbox" id="chk_resto1" name="chk_resto1">
-                        <label for="chk_resto1"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
+                    <div class="restaurant__description">
+                        <a href="restaurant/restaurant_1.html" class="restaurant__description__texte">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </a>
+                        <div class="restaurant__description__favoris">
+                            <input type="checkbox" id="chk_resto1" name="chk_resto1">
+                            <label for="chk_resto1"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
+                        </div>
+                    </div>
+                    <a href="restaurant/restaurant_1.html" class="restaurant_nouveau">
+                        <p>Nouveau</p>
+                    </a>
+                </div>
+
+                <div class="restaurant">
+                    <a href="restaurant/restaurant_2.html" class="restaurant__img">
+                        <img src="image/restaurant_2.jpg" alt="Image La note enchantée">
+                    </a>
+                    <div class="restaurant__description">
+                        <a href="restaurant/restaurant_2.html" class="restaurant__description__texte">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </a>
+                        <div class="restaurant__description__favoris">
+                            <input type="checkbox" id="chk_resto2" name="chk_resto2">
+                            <label for="chk_resto2"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
+                        </div>
+                    </div>
+                    <a href="restaurant/restaurant_2.html" class="restaurant_nouveau">
+                        <p>Nouveau</p>
+                    </a>
+                </div>
+
+                <div class="restaurant">
+                    <a href="restaurant/restaurant_3.html" class="restaurant__img">
+                        <img src="image/restaurant_3.jpg" alt="Image À la française">
+                    </a>
+                    <div class="restaurant__description">
+                        <a href="restaurant/restaurant_3.html" class="restaurant__description__texte">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </a>
+                        <div class="restaurant__description__favoris">
+                            <input type="checkbox" id="chk_resto3" name="chk_resto3">
+                            <label for="chk_resto3"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
+                        </div>
                     </div>
                 </div>
-                <a href="restaurant/restaurant_1.html" class="restaurant_nouveau">
-                    <p>Nouveau</p>
-                </a>
-            </div>
 
-            <div class="restaurant">
-                <a href="restaurant/restaurant_2.html" class="restaurant__img">
-                    <img src="image/restaurant_2.jpg" alt="Image La note enchantée">
-                </a>
-                <div class="restaurant__description">
-                    <a href="restaurant/restaurant_2.html" class="restaurant__description__texte">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                <div class="restaurant">
+                    <a href="restaurant/restaurant_4.html" class="restaurant__img">
+                        <img src="image/restaurant_4.jpg" alt="Image Le délice des sens">
                     </a>
-                    <div class="restaurant__description__favoris">
-                        <input type="checkbox" id="chk_resto2" name="chk_resto2">
-                        <label for="chk_resto2"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
-                    </div>
-                </div>
-                <a href="restaurant/restaurant_2.html" class="restaurant_nouveau">
-                    <p>Nouveau</p>
-                </a>
-            </div>
-
-            <div class="restaurant">
-                <a href="restaurant/restaurant_3.html" class="restaurant__img">
-                    <img src="image/restaurant_3.jpg" alt="Image À la française">
-                </a>
-                <div class="restaurant__description">
-                    <a href="restaurant/restaurant_3.html" class="restaurant__description__texte">
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                    </a>
-                    <div class="restaurant__description__favoris">
-                        <input type="checkbox" id="chk_resto3" name="chk_resto3">
-                        <label for="chk_resto3"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
+                    <div class="restaurant__description">
+                        <a href="restaurant/restaurant_4.html" class="restaurant__description__texte">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </a>
+                        <div class="restaurant__description__favoris">
+                            <input type="checkbox" id="chk_resto4" name="chk_resto4">
+                            <label for="chk_resto4"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="restaurant">
-                <a href="restaurant/restaurant_4.html" class="restaurant__img">
-                    <img src="image/restaurant_4.jpg" alt="Image Le délice des sens">
-                </a>
-                <div class="restaurant__description">
-                    <a href="restaurant/restaurant_4.html" class="restaurant__description__texte">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </a>
-                    <div class="restaurant__description__favoris">
-                        <input type="checkbox" id="chk_resto4" name="chk_resto4">
-                        <label for="chk_resto4"><i class="far fa-heart"></i><i class="fas fa-heart"></i></label>
-                    </div>
-                </div>
+        <footer>
+            <div>
+                <h2>ohmyfood</h2>
+                <p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
+                <p><i class="fas fa-hands-helping"></i> Devenir partenaire</p>
+                <p>Mentions légales</p>
+                <a href="mailto:ohmyfood@gmail.com">Contact</a>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div>
-            <h2>ohmyfood</h2>
-            <p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
-            <p><i class="fas fa-hands-helping"></i> Devenir partenaire</p>
-            <p>Mentions légales</p>
-            <a href="mailto:ohmyfood@gmail.com">Contact</a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
