@@ -412,7 +412,7 @@ nav {
                     right: 5%;
                 }
                 input {
-                    appearance: none;
+                    -webkit-appearance: none;
                     &:checked + label .fas {
                         z-index: 1;
                         opacity: 1;

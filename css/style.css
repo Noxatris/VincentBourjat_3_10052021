@@ -403,7 +403,7 @@ nav .bouton_gmap #chk_gmap:checked + label i {
   right: 5%;
 }
 .conteneur_restaurant .restaurant__description__favoris input {
-  appearance: none;
+  -webkit-appearance: none;
 }
 .conteneur_restaurant .restaurant__description__favoris input:checked + label .fas {
   z-index: 1;
