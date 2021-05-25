@@ -158,7 +158,6 @@ header .conteneur_logo__image {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: all 1s;
-  transition-delay: 0.3s;
 }
 .menu__conteneur__plat__texte h3,
 .menu__conteneur__plat__texte p {
@@ -170,19 +169,19 @@ header .conteneur_logo__image {
 }
 .menu__conteneur__plat__choix {
   display: flex;
-  width: 45%;
+  width: 10%;
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   transform-origin: left;
-  transform: translateX(65%);
   transition: all 1s;
   margin-left: 10px;
+  transition-delay: 0.1s;
 }
 .menu__conteneur__plat__choix__selec {
   height: 100%;
   background-color: #99e2d0;
-  width: 65%;
+  width: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,7 +194,7 @@ header .conteneur_logo__image {
   transform: rotate(-45deg);
 }
 .menu__conteneur__plat__choix__prix {
-  width: 40%;
+  width: 100%;
   display: flex;
   align-self: flex-end;
   justify-self: center;
@@ -203,13 +202,19 @@ header .conteneur_logo__image {
   margin-right: 10px;
 }
 .menu__conteneur__plat:hover .menu__conteneur__plat__choix {
-  transform: translateX(0);
+  width: 30%;
+}
+.menu__conteneur__plat:hover .menu__conteneur__plat__choix__prix {
+  width: 25%;
+}
+.menu__conteneur__plat:hover .menu__conteneur__plat__choix__selec {
+  width: 75%;
+}
+.menu__conteneur__plat:hover .menu__conteneur__plat__texte {
+  width: 70%;
 }
 .menu__conteneur__plat:hover .menu__conteneur__plat__choix__selec i {
   transform: rotate(360deg);
-}
-.menu__conteneur__plat:hover .menu__conteneur__plat__choix__texte {
-  width: 80%;
 }
 .menu .bouton_commander {
   width: 60%;
@@ -226,6 +231,8 @@ header .conteneur_logo__image {
 }
 .menu .bouton_commander:hover {
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+  background-image: radial-gradient(at 0% 5%, #ff8de0, 55%, #9e67e0);
 }
 
 @keyframes slideFromBottom {
@@ -356,29 +363,6 @@ footer div a {
     width: 50px;
     height: 3px;
     background-color: #99e2d0;
-  }
-  .menu__conteneur__plat {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 10px;
-    width: 90%;
-    height: 50px;
-    margin: 0 auto 20px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .menu__conteneur__plat__texte p {
-    margin: 0;
-  }
-  .menu__conteneur__plat__prix {
-    display: flex;
-    align-self: flex-end;
-    margin: 0 5px 0 0;
-  }
-  .menu__conteneur__plat__choix {
-    display: none;
   }
   .menu .bouton_commander {
     width: 20%;

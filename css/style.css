@@ -632,6 +632,15 @@ footer div a {
                                                     PC 
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 1025px) {
+  .conteneur_loader__texte {
+    font-size: 7em;
+  }
+  .conteneur_loader__bar {
+    width: 560px;
+    height: 40px;
+    border: 2px solid black;
+  }
+
   .conteneur_restaurant {
     flex-direction: row;
     justify-content: space-around;
