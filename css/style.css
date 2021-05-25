@@ -227,7 +227,7 @@ nav .bouton_gmap label i {
   transition: transform 0.5s ease;
 }
 nav .bouton_gmap input {
-  appearance: none;
+  -webkit-appearance: none;
 }
 nav .bouton_gmap #chk_gmap:checked ~ .iframe_gmap {
   height: 300px;
@@ -464,6 +464,15 @@ footer div a {
                                                     TABLETTE PORTRAIT
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 600px) {
+  .conteneur_loader__texte {
+    font-size: 4em;
+  }
+  .conteneur_loader__bar {
+    width: 350px;
+    height: 35px;
+    border: 2px solid black;
+  }
+
   /*------------------------------------------------------------------------------------------------------------------------
                                                   NAV
   ------------------------------------------------------------------------------------------------------------------------*/
@@ -535,6 +544,15 @@ footer div a {
   .conteneur_globale {
     display: flex;
     flex-flow: row wrap;
+  }
+
+  .conteneur_loader__texte {
+    font-size: 5em;
+  }
+  .conteneur_loader__bar {
+    width: 450px;
+    height: 35px;
+    border: 2px solid black;
   }
 
   /*------------------------------------------------------------------------------------------------------------------------
