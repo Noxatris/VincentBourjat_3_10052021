@@ -35,25 +35,6 @@ $gris: #f2f2f2;
     background-color: white;
 }
 
-@keyframes opacityBody {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes translateLetter {
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(15px);
-    }
-    
-}
-
 .lettre--1{
     animation-delay: .1s;
 }
@@ -119,7 +100,7 @@ $gris: #f2f2f2;
         }
     }
 }
-
+// Animation Barre de chargement
 @keyframes loaderBar {
     0%{
         transform: scaleX(0);
@@ -138,6 +119,7 @@ $gris: #f2f2f2;
     }
 }
 
+// Animation Réduction de l'opacité du Loader
 @keyframes opacityLoader {
     from{
         opacity: 1;
@@ -148,6 +130,27 @@ $gris: #f2f2f2;
         transform: translateY(-250px);
     }
 }
+
+// Animation Augmentation de l'opacité du Loader
+@keyframes opacityBody {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+// Animation Mouveaument des lettres de Ohmyfood
+@keyframes translateLetter {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(15px);
+    }
+    
+}
 /*------------------------------------------------------------------------------------------------------------------------
                                                     HEADER
 ------------------------------------------------------------------------------------------------------------------------*/
@@ -155,15 +158,11 @@ header {
     display: flex;
     justify-content: center;
     height: 60px;
-    box-shadow: $shadow;
     border-bottom: 1px solid transparent;
     .conteneur_logo {
         display: flex;
         margin-top: 15px;
-        width: 50%;
         height: 70%;
-        justify-content: center;
-        align-items: center;
         &__image {
             height: 65%;
         }
@@ -174,16 +173,10 @@ header {
                                                     NAV
 ------------------------------------------------------------------------------------------------------------------------*/
 nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     font-weight: bold;
     .nav_localisation {
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-content: center;
         background-color: darken($gris, 15);
     }
     .nav__conteneur_icone {
@@ -191,10 +184,8 @@ nav {
     }
 
     .bouton_gmap {
-        width: 100%;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
         .iframe_gmap {
             overflow: hidden;
             height: 0px;
@@ -205,7 +196,6 @@ nav {
             }
         }
         .gmap_bar {
-            width: 100%;
             height: 3px;
             background-image: linear-gradient(rgb(128, 128, 128), 50%, darken(gray, 5));
         }
@@ -295,7 +285,6 @@ nav {
 ------------------------------------------------------------------------------------------------------------------------*/
 .conteneur_fonctionnement {
     margin: 50px 0 60px 0;
-    height: auto;
     h2 {
         margin-bottom: 25px;
     }
@@ -457,7 +446,6 @@ footer {
     div {
         margin: 10px auto;
         width: 90%;
-        height: 100%;
         i {
             margin-right: 10px;
         }
@@ -501,7 +489,6 @@ footer {
     ------------------------------------------------------------------------------------------------------------------------*/
     .conteneur_main {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         background-color: $gris;
         margin-top: -48px;
@@ -510,17 +497,13 @@ footer {
     .conteneur_presentation {
         display: flex;
         justify-content: space-around;
-        align-content: space-around;
         width: 47%;
         height: 367px;
-        background-color: transparent;
         margin-top: 48px;
         .presentation{
             margin: auto 0;
-            display: flex;
             width: 100%;
             height: 60%;
-            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             h1{
@@ -546,10 +529,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         width: 47%;
         margin: 0 2%;
-
         h2 {
             margin: 15px auto 10px auto;
         }
@@ -597,27 +578,19 @@ footer {
                                                     PRESENTATION
     ------------------------------------------------------------------------------------------------------------------------*/
     .conteneur_main {
-        display: flex;
         height: 700px;
         flex-direction: column;
-        align-items: flex-start;
-        background-color: $gris;
         border-bottom-right-radius: 25px;
         box-shadow: $shadow;
         padding-bottom: 10px;
     }
 
     .conteneur_presentation {
-        display: flex;
         flex-direction: column;
         width: 100%;
         height: 45%;
-        padding: 0;
         .presentation{
-            margin: 0;
             padding: 0;
-            justify-content: space-between;
-            align-items: center;
             p{
                 margin: 0;
             }
@@ -625,13 +598,8 @@ footer {
     }
 
     .conteneur_fonctionnement {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
         width: 100%;
         height: 45%;
-        margin: 0 2%;
     }
 
     .separateur_presentation {
@@ -648,10 +616,7 @@ footer {
         }
     }
     .conteneur_restaurant {
-        display: flex;
-        flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
         height: 85%;
         overflow: scroll;
     }
@@ -660,7 +625,6 @@ footer {
     ------------------------------------------------------------------------------------------------------------------------*/
     footer {
         width: 100%;
-        padding-bottom: 10px;
     }
 }
 
@@ -669,6 +633,9 @@ footer {
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 1025px) {
 
+    /*------------------------------------------------------------------------------------------------------------------------
+                                                    LOADER
+    ------------------------------------------------------------------------------------------------------------------------*/
     .conteneur_loader{
         &__texte{
             font-size: 7em;           
@@ -680,9 +647,18 @@ footer {
         }
     }
 
+    /*------------------------------------------------------------------------------------------------------------------------
+                                                    PRESENTATION
+    ------------------------------------------------------------------------------------------------------------------------*/
+    .presentation{
+        font-size: 1.2em;
+    }
+
+    /*------------------------------------------------------------------------------------------------------------------------
+                                                    RESTAURANT
+    ------------------------------------------------------------------------------------------------------------------------*/
     .conteneur_restaurant {
         flex-direction: row;
-        justify-content: space-around;
         .restaurant {
             width: 22%;
             height: 350px;
@@ -696,42 +672,27 @@ footer {
         }
     }
 
-    .presentation{
-        font-size: 1.2em;
-    }
-
+    /*------------------------------------------------------------------------------------------------------------------------
+                                                    FOOTER
+    ------------------------------------------------------------------------------------------------------------------------*/
     footer {
-        height: auto;
-        display: flex;
-        background-color: rgb(43, 43, 43);
-        color: white;
         div {
             display: flex;
             flex-flow: row wrap;
             margin: 10px 40px;
-            width: 90%;
-            height: 100%;
+            h2 {
+                width: 90%;
+            }
             p {
                 margin-right: 50px;
             }
             i {
                 margin-right: 5px;
             }
-            h2 {
-                width: 90%;
-                margin: 10px 0 10px 0;
-            }
             a{
-                color: white;
                 margin: 16px;
-                font-size: 1em;
             }
         }
     }
 }
 
-/*==============================================================================================================================================================================================
-                                                    PC HD
-===============================================================================================================================================================================================*/
-@media only screen and (min-width: 1280px) {
-}

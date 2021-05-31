@@ -29,22 +29,6 @@ a {
   background-color: white;
 }
 
-@keyframes opacityBody {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes translateLetter {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(15px);
-  }
-}
 .lettre--1 {
   animation-delay: 0.1s;
 }
@@ -139,6 +123,22 @@ a {
     transform: translateY(-250px);
   }
 }
+@keyframes opacityBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes translateLetter {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
 /*------------------------------------------------------------------------------------------------------------------------
                                                     HEADER
 ------------------------------------------------------------------------------------------------------------------------*/
@@ -146,16 +146,12 @@ header {
   display: flex;
   justify-content: center;
   height: 60px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-bottom: 1px solid transparent;
 }
 header .conteneur_logo {
   display: flex;
   margin-top: 15px;
-  width: 50%;
   height: 70%;
-  justify-content: center;
-  align-items: center;
 }
 header .conteneur_logo__image {
   height: 65%;
@@ -165,27 +161,19 @@ header .conteneur_logo__image {
                                                     NAV
 ------------------------------------------------------------------------------------------------------------------------*/
 nav {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   font-weight: bold;
 }
 nav .nav_localisation {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-content: center;
   background-color: #cccccc;
 }
 nav .nav__conteneur_icone {
   margin-right: 15px;
 }
 nav .bouton_gmap {
-  width: 100%;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
 }
 nav .bouton_gmap .iframe_gmap {
   overflow: hidden;
@@ -197,7 +185,6 @@ nav .bouton_gmap .iframe_gmap iframe {
   width: 100%;
 }
 nav .bouton_gmap .gmap_bar {
-  width: 100%;
   height: 3px;
   background-image: linear-gradient(gray, 50%, #737373);
 }
@@ -283,7 +270,6 @@ nav .bouton_gmap #chk_gmap:checked + label i {
 ------------------------------------------------------------------------------------------------------------------------*/
 .conteneur_fonctionnement {
   margin: 50px 0 60px 0;
-  height: auto;
 }
 .conteneur_fonctionnement h2 {
   margin-bottom: 25px;
@@ -445,7 +431,6 @@ footer {
 footer div {
   margin: 10px auto;
   width: 90%;
-  height: 100%;
 }
 footer div i {
   margin-right: 10px;
@@ -485,7 +470,6 @@ footer div a {
   ------------------------------------------------------------------------------------------------------------------------*/
   .conteneur_main {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #f2f2f2;
     margin-top: -48px;
@@ -494,18 +478,14 @@ footer div a {
   .conteneur_presentation {
     display: flex;
     justify-content: space-around;
-    align-content: space-around;
     width: 47%;
     height: 367px;
-    background-color: transparent;
     margin-top: 48px;
   }
   .conteneur_presentation .presentation {
     margin: auto 0;
-    display: flex;
     width: 100%;
     height: 60%;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
@@ -529,7 +509,6 @@ footer div a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     width: 47%;
     margin: 0 2%;
   }
@@ -577,41 +556,28 @@ footer div a {
                                                   PRESENTATION
   ------------------------------------------------------------------------------------------------------------------------*/
   .conteneur_main {
-    display: flex;
     height: 700px;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: #f2f2f2;
     border-bottom-right-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding-bottom: 10px;
   }
 
   .conteneur_presentation {
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 45%;
-    padding: 0;
   }
   .conteneur_presentation .presentation {
-    margin: 0;
     padding: 0;
-    justify-content: space-between;
-    align-items: center;
   }
   .conteneur_presentation .presentation p {
     margin: 0;
   }
 
   .conteneur_fonctionnement {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
     width: 100%;
     height: 45%;
-    margin: 0 2%;
   }
 
   .separateur_presentation {
@@ -630,10 +596,7 @@ footer div a {
   }
 
   .conteneur_restaurant {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     height: 85%;
     overflow: scroll;
   }
@@ -643,13 +606,15 @@ footer div a {
   ------------------------------------------------------------------------------------------------------------------------*/
   footer {
     width: 100%;
-    padding-bottom: 10px;
   }
 }
 /*==============================================================================================================================================================================================
                                                     PC 
 ===============================================================================================================================================================================================*/
 @media only screen and (min-width: 1025px) {
+  /*------------------------------------------------------------------------------------------------------------------------
+                                                  LOADER
+  ------------------------------------------------------------------------------------------------------------------------*/
   .conteneur_loader__texte {
     font-size: 7em;
   }
@@ -659,9 +624,18 @@ footer div a {
     border: 2px solid black;
   }
 
+  /*------------------------------------------------------------------------------------------------------------------------
+                                                  PRESENTATION
+  ------------------------------------------------------------------------------------------------------------------------*/
+  .presentation {
+    font-size: 1.2em;
+  }
+
+  /*------------------------------------------------------------------------------------------------------------------------
+                                                  RESTAURANT
+  ------------------------------------------------------------------------------------------------------------------------*/
   .conteneur_restaurant {
     flex-direction: row;
-    justify-content: space-around;
   }
   .conteneur_restaurant .restaurant {
     width: 22%;
@@ -675,22 +649,16 @@ footer div a {
     width: 100%;
   }
 
-  .presentation {
-    font-size: 1.2em;
-  }
-
-  footer {
-    height: auto;
-    display: flex;
-    background-color: #2b2b2b;
-    color: white;
-  }
+  /*------------------------------------------------------------------------------------------------------------------------
+                                                  FOOTER
+  ------------------------------------------------------------------------------------------------------------------------*/
   footer div {
     display: flex;
     flex-flow: row wrap;
     margin: 10px 40px;
+  }
+  footer div h2 {
     width: 90%;
-    height: 100%;
   }
   footer div p {
     margin-right: 50px;
@@ -698,18 +666,9 @@ footer div a {
   footer div i {
     margin-right: 5px;
   }
-  footer div h2 {
-    width: 90%;
-    margin: 10px 0 10px 0;
-  }
   footer div a {
-    color: white;
     margin: 16px;
-    font-size: 1em;
   }
 }
-/*==============================================================================================================================================================================================
-                                                    PC HD
-===============================================================================================================================================================================================*/
 
 /*# sourceMappingURL=style.css.map */
