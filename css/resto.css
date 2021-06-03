@@ -117,11 +117,13 @@ header .conteneur_logo__image {
   bottom: 30%;
   right: 5%;
   cursor: pointer;
+  transition: all 1s ease;
 }
 .menu__titre__favoris .far {
   position: absolute;
   bottom: 30%;
   right: 5%;
+  transition: all 1s ease;
 }
 .menu__titre__favoris input {
   -webkit-appearance: none;
@@ -131,14 +133,7 @@ header .conteneur_logo__image {
   opacity: 1;
 }
 .menu__titre__favoris input:checked + label .far {
-  z-index: -1;
   opacity: 0;
-}
-.menu__titre__favoris .fas {
-  transition: all 1s ease;
-}
-.menu__titre__favoris .far {
-  transition: all 1s ease;
 }
 .menu #entrees {
   animation-delay: 0s;

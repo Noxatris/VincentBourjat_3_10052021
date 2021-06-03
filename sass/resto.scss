@@ -121,11 +121,13 @@ header {
                 bottom: 30%;
                 right: 5%;
                 cursor: pointer;
+                transition: all 1s ease;
             }
             .far{
                 position: absolute;
                 bottom: 30%;
                 right: 5%;
+                transition: all 1s ease;
             }
             input {
                 -webkit-appearance: none;
@@ -134,15 +136,8 @@ header {
                     opacity: 1;
                 }
                 &:checked + label .far {
-                    z-index: -1;
                     opacity: 0;
                 }
-            }
-            .fas {
-                transition: all 1s ease;
-            }
-            .far {
-                transition: all 1s ease;
             }
         }
     }
