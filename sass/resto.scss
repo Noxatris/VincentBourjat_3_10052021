@@ -94,6 +94,7 @@ header {
         justify-content: space-between;
         align-items: center;
         font-size: 1.1em;
+        position: relative;
         h1 {
             width: 80%;
         }
@@ -103,6 +104,46 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        &__favoris {
+            width: 10%;
+            margin-right: 5%;
+            font-size: 1.8em;
+            color: gray;
+            
+            .fas {
+                background-image: radial-gradient(at 0% 5%, $secondary-color, 55%, $primary-color);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                opacity: 0;
+                position: absolute;
+                bottom: 30%;
+                right: 5%;
+                cursor: pointer;
+            }
+            .far{
+                position: absolute;
+                bottom: 30%;
+                right: 5%;
+            }
+            input {
+                -webkit-appearance: none;
+                &:checked + label .fas {
+                    z-index: 1;
+                    opacity: 1;
+                }
+                &:checked + label .far {
+                    z-index: -1;
+                    opacity: 0;
+                }
+            }
+            .fas {
+                transition: all 1s ease;
+            }
+            .far {
+                transition: all 1s ease;
+            }
         }
     }
     #entrees {

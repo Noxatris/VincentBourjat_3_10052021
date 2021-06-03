@@ -89,6 +89,7 @@ header .conteneur_logo__image {
   justify-content: space-between;
   align-items: center;
   font-size: 1.1em;
+  position: relative;
 }
 .menu__titre h1 {
   width: 80%;
@@ -99,6 +100,45 @@ header .conteneur_logo__image {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu__titre__favoris {
+  width: 10%;
+  margin-right: 5%;
+  font-size: 1.8em;
+  color: gray;
+}
+.menu__titre__favoris .fas {
+  background-image: radial-gradient(at 0% 5%, #ff79da, 55%, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+  cursor: pointer;
+}
+.menu__titre__favoris .far {
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+}
+.menu__titre__favoris input {
+  -webkit-appearance: none;
+}
+.menu__titre__favoris input:checked + label .fas {
+  z-index: 1;
+  opacity: 1;
+}
+.menu__titre__favoris input:checked + label .far {
+  z-index: -1;
+  opacity: 0;
+}
+.menu__titre__favoris .fas {
+  transition: all 1s ease;
+}
+.menu__titre__favoris .far {
+  transition: all 1s ease;
 }
 .menu #entrees {
   animation-delay: 0s;
