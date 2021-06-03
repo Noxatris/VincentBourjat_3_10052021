@@ -172,57 +172,6 @@ nav .nav_localisation {
 nav .nav__conteneur_icone {
   margin-right: 15px;
 }
-nav .bouton_gmap {
-  display: flex;
-  flex-direction: column-reverse;
-}
-nav .bouton_gmap .iframe_gmap {
-  overflow: hidden;
-  height: 0px;
-  transition: height 500ms ease-in-out;
-}
-nav .bouton_gmap .iframe_gmap iframe {
-  min-height: 100%;
-  width: 100%;
-}
-nav .bouton_gmap .gmap_bar {
-  height: 3px;
-  background-image: linear-gradient(gray, 50%, #737373);
-}
-nav .bouton_gmap label {
-  width: 75px;
-  height: 40px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: radial-gradient(at 0% 5%, #ff79da, 55%, #9356dc);
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  color: white;
-}
-nav .bouton_gmap label:hover {
-  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
-  background-image: radial-gradient(at 0% 5%, #ff88de, 55%, #9b63df);
-}
-nav .bouton_gmap label i {
-  padding: 10px;
-  width: 45px;
-  height: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.5s ease;
-}
-nav .bouton_gmap input {
-  -webkit-appearance: none;
-}
-nav .bouton_gmap #chk_gmap:checked ~ .iframe_gmap {
-  height: 300px;
-}
-nav .bouton_gmap #chk_gmap:checked + label i {
-  transform: rotate(-180deg);
-}
 
 /*------------------------------------------------------------------------------------------------------------------------
                                                     PRESENTATION
@@ -236,13 +185,14 @@ nav .bouton_gmap #chk_gmap:checked + label i {
   flex-direction: column;
   width: 90%;
   height: 280px;
-  margin: -45px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
   padding-bottom: 20px;
+  justify-content: center;
 }
 .presentation h1 {
   width: 80%;
-  margin: 70px auto 0px auto;
+  margin: 0px auto 0px auto;
 }
 .presentation p {
   margin: 10px auto 0 auto;
@@ -473,7 +423,6 @@ footer div a {
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
-    margin-top: -48px;
   }
 
   .conteneur_presentation {
@@ -481,7 +430,6 @@ footer div a {
     justify-content: space-around;
     width: 47%;
     height: 367px;
-    margin-top: 48px;
   }
   .conteneur_presentation .presentation {
     margin: auto 0;
@@ -593,7 +541,7 @@ footer div a {
     margin-bottom: 20px;
   }
   .section_restaurant h2 {
-    margin-top: 0px;
+    margin-top: 25px;
   }
 
   .conteneur_restaurant {
@@ -607,6 +555,7 @@ footer div a {
   ------------------------------------------------------------------------------------------------------------------------*/
   footer {
     width: 100%;
+    margin-top: 30px;
   }
 }
 /*==============================================================================================================================================================================================
